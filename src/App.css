@@ -45,3 +45,7 @@ button{
   width: 8rem;
   height: 2.5rem;
 }
+input:focus{
+  border-bottom: solid 2px white;
+  
+}
