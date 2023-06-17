@@ -26,7 +26,7 @@ function App() {
     console.log(success);
     setTimeout(function() {
       window.location.reload();
-    }, 2000);
+    }, 1000);
   }
   return(
     <div className="signup-form">
