@@ -23,7 +23,7 @@ function App() {
       setError('');
       setSuccess("Successfully Signed Up!");
     }
-    console.log(success);
+    console.log("Successfully Signed Up!");
     setTimeout(function() {
       window.location.reload();
     }, 1000);
