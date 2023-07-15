@@ -58,8 +58,6 @@ font-weight: 600;
 .input-field{
   display: flex;
   flex-direction: column;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
 }
 input{
   border: none;
@@ -95,4 +93,37 @@ button{
 input:focus{
   border-bottom: solid 2px rgb(160,160,160) ;
   
+}
+.signup-links{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 6rem;
+}
+.logos{
+  width: 25px;
+  height: 25px;
+}
+.google-link,.fb-link{
+  display: flex;
+  width: 210px;
+  height: 45px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  border: 1px solid #EAEAEA;
+  border-radius: 10px;
+}
+.or-div{
+  display: flex;
+  align-self: center;
+  
+  font-size: 18px;
+  color: rgb(179,178,178);
+}
+.google-link:hover,.fb-link:hover{
+  cursor: pointer;
+  background-color: #EAEAEA;
 }

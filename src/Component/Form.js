@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import googleLogo from "./googleLogo.png";
+import facebookLogo from "./facebookLogo.png";
+
 
 const Form=()=>{
   let [name,setName]=useState("");
@@ -37,6 +40,17 @@ const Form=()=>{
   return(
     <div className="signup-form">
     <div className='heading'>Create Account</div>
+    <div className="signup-links">
+      <div className="google-link">
+        <img className="logos" src={googleLogo}/>
+        <div>Sign up with Google</div>
+      </div>
+      <div className="fb-link">
+      <img className="logos" src={facebookLogo}/>
+        <div>Sign up with Facebook</div>
+      </div>
+    </div>
+    <div className="or-div">- OR -</div>
     <div className="input-field">
       <input type='text' id='name' placeholder='Full Name' onChange={(e)=>setName(e.target.value)}></input>
       <input type='email' id='email' placeholder='Email' onChange={(e)=>setEmail(e.target.value)}></input>
