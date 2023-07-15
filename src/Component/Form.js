@@ -22,7 +22,7 @@ const Form=()=>{
       return;
     }
     else if(password.trim()!==confirmPassword.trim()){
-      setError("Password doesn't match!");
+      setError("Error: Please Make sure your passwords and confirm passwords match!");
       return;
     }
     else{
@@ -36,7 +36,7 @@ const Form=()=>{
   }
   return(
     <div className="signup-form">
-    <div className='heading'>Signup</div>
+    <div className='heading'>Create Account</div>
     <div className="input-field">
       <input type='text' id='name' placeholder='Full Name' onChange={(e)=>setName(e.target.value)}></input>
       <input type='email' id='email' placeholder='Email' onChange={(e)=>setEmail(e.target.value)}></input>
@@ -45,7 +45,7 @@ const Form=()=>{
     </div>
     {error && <div className='error'>{error}</div>}
     {success && <div className='success'>{success}</div>}
-    <button onClick={validation}>Signup</button>
+    <button onClick={validation}>Create Account</button>
   </div>
   );
 };

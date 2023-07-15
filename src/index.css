@@ -1,51 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-*{
-  background-color: black;
+.main-container{
+  background-color: rgb(176,217,218);
+  display: flex;
+  
+}
+.first-half{
+  width: 40vw;
+  height: 100vh;
+
+}
+.first-half-heading{
+  color:rgb(254,255,254);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  margin-top: 8rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.overlay {
+  position: absolute;
+  top: 220.62px;
+  left: 18.57px;
+  width: 461px;
+  height: 502px;
+}
+
+.overlay img {
+  display: block;
+  width: 461px;
+  height: 502px;
+  object-fit: cover;
 }
 body{
   font-family: 'Inter', sans-serif;
+  background-color: rgb(176,217,218);
+  padding: 0;
+  margin: 0;
 }
 .signup-form{
   display: flex;
   flex-direction: column;
+  width: 60vw;
+  height: 100vh;
   padding: 5rem 15rem;
-  gap: 1.5rem;
+  gap: 2rem;
+  border-top-left-radius: 4rem;
+  border-bottom-left-radius: 4rem;
+  background-color: rgb(254,255,254);
 }
 
 .heading{
-  color: white;
-  font-size: 3rem;
-font-weight: 400;
+  color: black;
+  font-size: 2.5rem;
+font-weight: 600;
 }
 .input-field{
   display: flex;
   flex-direction: column;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 input{
   border: none;
   outline: none;
-  border-bottom: solid 1px rgb(118,119,119);
+  border-bottom: solid 1px rgb(243,243,242);
   height: 4rem;
-  color: white;
+  color: black;
   font-size: 1rem;
  
 }
 ::placeholder{
-  color: rgb(126,126,127);
+  color: rgb(160,160,160);
   font-size: 1rem;
 }
 .error{
   color: red;
 }
 .success{
-  color: green;
+  color: rgb(124,210,215);
 }
 button{
-  background-color: white;
-  width: 8rem;
-  height: 2.5rem;
+  background-color: rgb(124,210,215);
+  color: white;
+  font-size: 1.4rem;
+  width: 389px;
+  height: 44px;
+  border: none;
+  border-radius: 1rem;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
 }
 input:focus{
-  border-bottom: solid 2px white;
+  border-bottom: solid 2px rgb(160,160,160) ;
   
 }

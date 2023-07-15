@@ -1,10 +1,11 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import Form from './Component/Form';
+import FirstHalf from "./Component/FirstHalf";
 
 const App = () => {
   return (
-    <div>
+    <div className="main-container">
+      <FirstHalf />
       <Form/>
     </div>
   );
